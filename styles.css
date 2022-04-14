@@ -1,0 +1,178 @@
+body {
+  color: white;
+  background: rgb(25, 25, 25);
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Bungee', cursive;
+  font-size: 5rem;
+  color: rgb(0, 255, 105);
+  margin: -2rem;
+  text-shadow: 5px 5px 5px black;
+}
+
+#players {
+  text-align: center;
+  font-family: 'Gruppo', cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: -1rem;
+}
+
+.inputContainer {
+  margin: 1.5rem;
+  margin-bottom: 0;
+}
+
+.input {
+  height: 2rem;
+  width: 10rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(0, 255, 105);
+  font-family: 'Gruppo', cursive;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.25rem;
+  background-color: rgb(25, 25, 25);
+  border: 2px solid white;
+}
+
+.input:disabled {
+  color: rgb(75, 75, 75);
+  border: 2px solid rgb(75, 75, 75);
+}
+
+#submit:disabled {
+  background-color: rgb(75, 75, 75);
+  color: black;
+}
+
+#submit {
+  width: 7rem;
+  margin: 0;
+  padding: 0.25rem;
+  font-family: 'Gruppo', cursive;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: rgb(131, 211, 157);
+  border: 0;
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 5px black;
+}
+
+#board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  width: 125px;
+  height: 125px;
+  margin: 0.25rem;
+  border-radius: 10px;
+  border: 5px solid rgb(255, 255, 255);
+  background-color: rgb(25, 25, 25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gruppo', cursive;
+  font-size: 6rem;
+  font-weight: bolder;
+}
+
+#row1,
+#row2,
+#row3 {
+  display: flex;
+}
+
+.box:disabled {
+  color: rgb(0, 255, 105);
+}
+
+#winner {
+  text-align: center;
+  font-family: 'Bungee', cursive;
+  font-size: 2.5rem;
+  color: rgb(131, 211, 157);
+  margin: -1.25rem;
+  text-shadow: 5px 5px 5px black;
+}
+
+#scorePanel {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  height: 170px;
+  /* border: 1px solid; */
+}
+
+#scoreBoardX,
+#scoreBoardO {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(25, 25, 25);
+  width: 125px;
+  padding: 1rem;
+}
+
+.scoreNumber {
+  font-family: 'Bungee', cursive;
+  font-size: 5rem;
+  color: rgb(0, 255, 105);
+  margin-top: -3.5rem;
+  margin-bottom: -4rem;
+}
+
+.playerName {
+  font-family: 'Gruppo', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(131, 211, 157);
+  text-transform: uppercase;
+  margin-top: -2.5rem;
+  margin-bottom: 0;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* border: 1px solid white; */
+}
+
+p {
+  text-align: center;
+  font-family: 'Bungee', cursive;
+  font-size: 1rem;
+  margin-top: -0.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.more {
+  align-self: center;
+  width: fit-content;
+  margin: 0;
+  padding: 7px;
+  font-family: 'Gruppo', cursive;
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: rgb(131, 211, 157);
+  border: 0;
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 5px black;
+}

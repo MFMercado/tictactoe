@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- For fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Gruppo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 id="header">TIC TAC TOE</h1>
+    <div id="players">
+      <section id="playerInput">
+        <div class="inputContainer">
+          <label for="playerXname" class="label">Player X:</label>
+          <input
+            id="playerXname"
+            class="input"
+            name="playerX"
+            type="text"
+            placeholder="Name Here"
+            required
+          />
+        </div>
+        <div class="inputContainer">
+          <label for="playerOname" class="label">Player O:</label>
+          <input
+            id="playerOname"
+            class="input"
+            name="playerO"
+            type="text"
+            placeholder="Name Here"
+            required
+          />
+        </div>
+      </section>
+      <br />
+      <button id="submit" onClick="playerInput()">START!</button>
+    </div>
+    <br />
+    <div id="board">
+      <div id="row1">
+        <button id="btn0" class="box" onclick="currentTurn(this.id)" disabled></button>
+        <button id="btn1" class="box" onclick="currentTurn(this.id)" disabled></button>
+        <button id="btn2" class="box" onclick="currentTurn(this.id)" disabled></button>
+      </div>
+      <div id="row2">
+        <button id="btn3" class="box" onclick="currentTurn(this.id)" disabled></button>
+        <button id="btn4" class="box" onclick="currentTurn(this.id)" disabled></button>
+        <button id="btn5" class="box" onclick="currentTurn(this.id)" disabled></button>
+      </div>
+      <div id="row3">
+        <button id="btn6" class="box" onclick="currentTurn(this.id)" disabled></button>
+        <button id="btn7" class="box" onclick="currentTurn(this.id)" disabled></button>
+        <button id="btn8" class="box" onclick="currentTurn(this.id)" disabled></button>
+      </div>
+    </div>
+    <div id="scorePanel">
+      <div id="scoreBoardX">
+        <p>SCORE</p>
+        <br />
+        <div id="scoreX">
+          <p id="scoreXname" class="playerName">PLAYER X</p>
+          <p class="scoreNumber">0</p>
+        </div>
+      </div>
+
+      <div id="info">
+        <button id="again" class="more" onclick="nextRound()">NEXT ROUND</button>
+        <br />
+        <span id="winner">Game On!</span>
+        <br />
+        <button id="reset" class="more" onclick="resetAll()">RESET ALL</button>
+      </div>
+
+      <div id="scoreBoardO">
+        <p>SCORE</p>
+        <br />
+        <div id="scoreO">
+          <p id="scoreOname" class="playerName">PLAYER O</p>
+          <p class="scoreNumber">0</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
